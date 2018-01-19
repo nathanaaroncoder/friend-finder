@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body" id="modalPic">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Tell Us About Yourself</strong></h3>
+          </div>
+          <div class="panel-body">
+            <form method="POST" role="form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="pic">Link to a Picture of You</label>
+                <input type="text" class="form-control" id="pic">
+              </div>
+              <div class="form-group">
+                <label>I like the outdoors</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>I like rollercoasters</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>I like pizza</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>I like Star Wars</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions4" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions4" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions4" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions4" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>I like peanut butter</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <div class="form-group">
+                <label>I hate politics</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>Winter SUCKS</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions7" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions7" id="inlineRadio2" value="1"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions7" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions7" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions7" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>I like pizza</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions8" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions8" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions8" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions8" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions8" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>I like Star Wars</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions9" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions9" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions9" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions9" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions9" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>I like peanut butter</label>
+              </div>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions10" id="inlineRadio1" value="1"> Strongly Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions10" id="inlineRadio2" value="2"> Disagree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions10" id="inlineRadio3" value="3"> Neutral
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions10" id="inlineRadio2" value="4"> Agree
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions10" id="inlineRadio3" value="5"> Strongly Agree
+              </label>
+            </form>
+            <br>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-fire"></span> Find Friends!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="/api/friends">API Friends</a>
+      </div>
+      
+    </div>
+    <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newFriend = {
+        name: $("#name").val().trim(),
+        picLink: $("#pic").val().trim(),
+        score: [$('input[name=inlineRadioOptions1]:checked').val(), $('input[name=inlineRadioOptions2]:checked').val(), $('input[name=inlineRadioOptions3]:checked').val(), $('input[name=inlineRadioOptions4]:checked').val(), $('input[name=inlineRadioOptions5]:checked').val(), $('input[name=inlineRadioOptions6]:checked').val(), $('input[name=inlineRadioOptions7]:checked').val(), $('input[name=inlineRadioOptions8]:checked').val(), $('input[name=inlineRadioOptions9]:checked').val(), $('input[name=inlineRadioOptions10]:checked').val()]
+        // forcePoints: $("#force-points").val().trim()
+        };
+    // Question: What does this code do??
+     $.get("/api/friends", function(data) {
+        console.log(data);
+
+        var sumsArr = [];
+
+        for (var i = 0; i < data.length; i++) {
+           var sum = 0;
+
+          for (var j = 0; j < newFriend.score.length; j++) {
+            var absValue = Math.abs(newFriend.score[j] - data[i].score[j]);
+            console.log(` absValue ${absValue}`);
+            sum += absValue;
+           
+          }
+          sumsArr.push(sum);
+          console.log(`sum ${sum}`);
+          console.log(`sumsArr ${sumsArr}`);
+
+
+        }
+        var lowest = Math.min.apply(null, sumsArr);
+        console.log(`lowest ${lowest}`);
+        var whereInArray = sumsArr.indexOf(lowest);
+        console.log(`whereInArray ${whereInArray}`);
+        var chosen = data[whereInArray];
+        console.log(`chosen name ${chosen.name}`);
+        $("#myModalLabel").text(`You and ${chosen.name} should be friends!`);
+        var chosenPic = $("<img>")
+        chosenPic.attr("src", chosen.picLink);
+        chosenPic.css('height','250px');
+        $("#modalPic").html(chosenPic);
+
+        
+
+
+
+        
+      });
+
+
+    $.post("/api/new", newFriend)
+    .then(function(data) {
+    console.log(data);
+
+    });
+
+
+        $("#name").val("");
+        $("#pic").val("");
+        $('input[name=inlineRadioOptions1]').prop("checked", false);
+        $('input[name=inlineRadioOptions2]').prop("checked", false);
+        $('input[name=inlineRadioOptions3]').prop("checked", false);
+        $('input[name=inlineRadioOptions4]').prop("checked", false);
+        $('input[name=inlineRadioOptions5]').prop("checked", false);
+        $('input[name=inlineRadioOptions6]').prop("checked", false);
+        $('input[name=inlineRadioOptions7]').prop("checked", false);
+        $('input[name=inlineRadioOptions8]').prop("checked", false);
+        $('input[name=inlineRadioOptions9]').prop("checked", false);
+        $('input[name=inlineRadioOptions10]').prop("checked", false);
+
+   
+
+    });
+
+    
+    </script>
+  </body>
+</html>
