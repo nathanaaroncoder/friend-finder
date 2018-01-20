@@ -269,6 +269,18 @@
     // Question: What does this code do?
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
+
+      if ($("#name").val() === "" || $("#pic").val() === "" || $('input[name=inlineRadioOptions1]').val() === "" || $('input[name=inlineRadioOptions2]').val() === "" || $('input[name=inlineRadioOptions3]').val() === "" ||  $('input[name=inlineRadioOptions4]').val() === "" || $('input[name=inlineRadioOptions5]').val() === "" || $('input[name=inlineRadioOptions6]').val() === "" || $('input[name=inlineRadioOptions8]').val() === "" || $('input[name=inlineRadioOptions7]').val() === "" || $('input[name=inlineRadioOptions9]').val() === "" || $('input[name=inlineRadioOptions10]').val() === ""){
+
+          $("#myModalLabel").text(`Please fill in all fields!`);
+          $("#modalPic").html(`No match found.`);
+        }
+        else {
+
+
+          
+        
+
       var newFriend = {
         name: $("#name").val().trim(),
         picLink: $("#pic").val().trim(),
@@ -278,6 +290,9 @@
     // Question: What does this code do??
      $.get("/api/friends", function(data) {
         console.log(data);
+
+
+       
 
         var sumsArr = [];
 
@@ -336,7 +351,7 @@
         $('input[name=inlineRadioOptions9]').prop("checked", false);
         $('input[name=inlineRadioOptions10]').prop("checked", false);
 
-   
+   }
 
     });
 
