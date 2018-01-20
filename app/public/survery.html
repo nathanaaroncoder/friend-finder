@@ -5,6 +5,7 @@
     <title>Friend Finder</title>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/style" href="style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
@@ -23,14 +24,13 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
   </div>
 </div>
       
       <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="whole-panel">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Tell Us About Yourself</strong></h3>
           </div>
@@ -44,6 +44,7 @@
                 <label for="pic">Link to a Picture of You</label>
                 <input type="text" class="form-control" id="pic">
               </div>
+              <hr>
               <div class="form-group">
                 <label>I like the outdoors</label>
               </div>
@@ -64,6 +65,7 @@
               </label>
               <br>
               <br>
+              <hr>
               <div class="form-group">
                 <label>I like rollercoasters</label>
               </div>
@@ -84,6 +86,7 @@
               </label>
               <br>
               <br>
+              <hr>
               <div class="form-group">
                 <label>I like pizza</label>
               </div>
@@ -104,6 +107,7 @@
               </label>
               <br>
               <br>
+              <hr>
               <div class="form-group">
                 <label>I like Star Wars</label>
               </div>
@@ -124,6 +128,7 @@
               </label>
               <br>
               <br>
+              <hr>
               <div class="form-group">
                 <label>I like peanut butter</label>
               </div>
@@ -142,6 +147,9 @@
               <label class="radio-inline">
                 <input type="radio" name="inlineRadioOptions5" id="inlineRadio3" value="5"> Strongly Agree
               </label>
+              <br>
+              <br>
+              <hr>
               <div class="form-group">
                 <label>I hate politics</label>
               </div>
@@ -162,6 +170,7 @@
               </label>
               <br>
               <br>
+              <hr>
               <div class="form-group">
                 <label>Winter SUCKS</label>
               </div>
@@ -182,6 +191,7 @@
               </label>
               <br>
               <br>
+              <hr>
               <div class="form-group">
                 <label>I like pizza</label>
               </div>
@@ -202,6 +212,7 @@
               </label>
               <br>
               <br>
+              <hr>
               <div class="form-group">
                 <label>I like Star Wars</label>
               </div>
@@ -222,6 +233,7 @@
               </label>
               <br>
               <br>
+              <hr>
               <div class="form-group">
                 <label>I like peanut butter</label>
               </div>
@@ -242,7 +254,7 @@
               </label>
             </form>
             <br>
-            <div class="text-right">
+            <div>
               <button type="submit" class="btn btn-primary btn-md" id="add-btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-fire"></span> Find Friends!</button>
             </div>
           </div>
